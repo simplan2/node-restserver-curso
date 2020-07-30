@@ -21,6 +21,3 @@ if (process.env.NODE_ENV === 'dev') {
 }
 
 process.env.URLDB = urlDB;
-// mongodb://localhost:27017/cafe
-
-// mongodb+srv://juanjo:simplan@cafe.0cla6.mongodb.net/Cafe?retryWrites=true&w=majority
