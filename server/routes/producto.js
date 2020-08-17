@@ -78,8 +78,8 @@ app.get('/productos/:id', verificaToken, (req, res) => {
 // Buscar productos
 //=================================
 app.get('/productos/buscar/:termino', verificaToken, (req, res) => {
-    let termino = req.params.termino;
 
+    let termino = req.params.termino;
     let regex = new RegExp(termino, 'i');
     Producto.find({ nombre: regex })
         .populate('categoria', 'nombre')
